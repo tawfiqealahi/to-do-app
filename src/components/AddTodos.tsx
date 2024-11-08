@@ -21,13 +21,13 @@ const AddTodos: React.FC<Props> = ({handleAddNewTodo}) => {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form style={{textAlign:'center'}} onSubmit={handleSubmit}>
         <div className="form-input">
-            <label htmlFor="title"> Todo Title: </label>
-        <input type="text" name='title' value={title} onChange={handleChange} required autoFocus />
+            <label className='title' htmlFor="title"> Todo Title </label> <br />
+        <input className='input' type="text" placeholder='enter your next plan here' name='title' value={title} onChange={handleChange} required autoFocus />
         
         </div>
-    <button type='submit'>Add Todo</button>
+    <button className='submit' type='submit'>Add Todo</button>
 
     </form>
   );

@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+
+}
+.todo{
+  border: .2rem solid burlywood ;
+  /* margin: .5rem; */
+  text-align: center;
+  border-radius: 2rem;
+}
+

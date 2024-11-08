@@ -22,10 +22,15 @@ const todoData=[
 ]
 
 function App() {
-  const [todos,setTodos]=useState(todoData)
-  return (
+const [todos,setTodos]=useState(todoData)
+
+const handleDeleteTodo =(id: string)=>{
+ console.log(id)
+}
+
+return (
     <div className="App">
-      <Todos todos={todos}></Todos>
+      <Todos handleDeleteTodo={handleDeleteTodo} todos={todos}></Todos>
     </div>
   );
 }
